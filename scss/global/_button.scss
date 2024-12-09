@@ -1,0 +1,17 @@
+.button {
+  &-gradient { 
+    display: inline-block;
+    border: 1px solid var(--gradient-blue-color);
+    border-radius: 37px;
+    padding: 11px 24px 13px 24px;
+    color: var(--gradient-blue-color);
+    background-color: transparent;
+    transition: all var(--transition);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+

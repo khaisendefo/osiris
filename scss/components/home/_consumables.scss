@@ -1,0 +1,177 @@
+.consumables {
+  padding: 70px 0;
+  background-color: var(--white-color);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+  @include breakpoint-700 {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  @include breakpoint-900 {
+    padding: 45px 0;
+  }
+
+  & .splide__list {
+    padding: 10px !important;
+  }
+
+  &__title {
+    color: var(--dark-color);
+    margin-bottom: 30px;
+
+    @include breakpoint-500 {
+      text-align: center;
+    }
+  }
+
+
+  &__nav {
+     display: flex;
+     gap: 20px;
+  }
+
+  &__slider {
+
+    &-track {
+      @include breakpoint-450 {
+        overflow: visible !important;
+      }
+    }
+
+    &-nav {
+      @include breakpoint-500 {
+        display: none;
+      }
+      &-arrow {
+        position: absolute;
+        background-color: var(--accent-blue-color);
+        padding: 5px;
+        border-radius: 5px;
+        
+        & svg {
+          width: 25px;
+          height: 25px;
+
+          & path {
+            stroke: var(--white-color);
+          }
+        }
+
+
+        &--is-disabled {
+          opacity: 0.6;
+        }
+
+        &--prev {
+          top: 50%;
+          left: -20px;
+          transform: translateY(-50%);
+        }
+
+        &--next {
+          top: 50%;
+          right: -20px;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    &-card {
+      padding: 15px;
+      box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .2);
+      border-radius: 15px;
+      min-height: 610px;
+      max-height: 610px;
+
+      @include breakpoint-700 {
+        min-height: 500px;
+        max-height: 500px;
+      }
+
+      @include breakpoint-400 {
+        min-height: 550px;
+        max-height: 550px;
+      }
+
+      &-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        border: 1px solid var(--light-white-color);
+        border-radius: 15px;
+
+        @include breakpoint-1300 {
+          height: 170px;
+          overflow: hidden;
+
+          @include breakpoint-700 {
+            height: 250px;
+          }
+
+          @include breakpoint-700 {
+            height: 180px;
+          }
+        }
+        
+        & img {
+          margin: 0 auto;
+          
+          @include breakpoint-1300 {
+            width: 120px;
+            height: 200px;
+          }
+
+          @include breakpoint-700 {
+            width: 130px;
+            height: 180px;
+          }
+        }
+      }
+
+      &-body {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        height: 100%;
+        max-height: 315px;
+
+        @include breakpoint-1300 {
+          max-height: 395px;
+        }
+
+        @include breakpoint-700 {
+          max-height: 275px;
+        }
+
+        @include breakpoint-400 {
+          max-height: 325px;
+        }
+      }
+
+      &-information {
+        
+      }
+
+      &-name {
+        margin-bottom: 15px;
+      }
+
+      &-article {
+        margin-bottom: 15px;
+        color: var(--dark-color);
+        opacity: 0.8;
+      }
+
+      &-description {
+        // margin-bottom: 25px;
+      }
+
+      & .equipment__slider-card-button {
+        padding: 15px 30px;
+        display: inline-block;
+      }
+    }
+  }
+}

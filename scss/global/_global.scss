@@ -1,0 +1,26 @@
+@import 'button';
+@import 'text';
+
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+.body {
+  background-color: var(--black-color);
+  font-family: "Inter", sans-serif; 
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 968px;
+  height: 100%;
+}

@@ -1,0 +1,13 @@
+.header {
+  &__fixed {
+    padding: 20px 0;
+  }
+
+  &__content {
+    @include flex-all-between;
+  }
+
+  &__link {
+    display: inline-block;
+  }
+}
