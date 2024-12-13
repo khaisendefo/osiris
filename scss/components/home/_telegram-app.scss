@@ -1,0 +1,68 @@
+.telegram-app {
+  &__card {
+    @include flex-between;
+    border-radius: 32px;
+    padding: 31px 150px 0 40px;
+    background: linear-gradient(90.00deg, rgb(20, 112, 219),rgb(4, 222, 229) 127.826%);
+
+    @media (max-width: 822px) {
+      position: relative;
+      padding: 40px 40px 0;
+    }
+
+    @media (max-width: 622px) {
+      flex-direction: column;
+      margin-bottom: 22px;
+    }
+
+    @include breakpoint-400 {
+      padding: 20px 20px 0;
+    }
+
+    &-information {
+      @media (max-width: 622px) {
+        margin-bottom: 33px;
+      }
+    }
+
+    &-title {
+      max-width: 230px;
+    }
+
+    &-description {
+      margin-bottom: 22px;
+
+      @media (max-width: 622px) {
+        margin: 0;
+      }
+    }
+
+    &-link {
+      color: var(--blue-color);    
+      background: var(--white-color);
+      border: none;
+
+      @media (max-width: 622px) {
+        display: none;
+      }
+
+      &-two {
+        display: none;
+        max-width: 144px;
+        padding: 14px;
+        text-align: center;
+        margin: 0 auto;
+        @media (max-width: 622px) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__image {
+    @media (max-width: 622px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

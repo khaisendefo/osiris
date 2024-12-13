@@ -1,0 +1,69 @@
+.ready-set {
+
+  &__title {
+    & br {
+      display: none;
+
+      @media (max-width: 500px) {
+        display: block;
+      }
+    }
+  }
+  &__card {
+    @include flex-between;
+    position: relative;
+    border-radius: 32px;
+    padding: 23px 40px 0;
+    background: var(--gradient-blue-color);
+
+    @media (max-width: 722px) {
+      height: 260px;
+    }
+
+    @media (max-width: 522px) {
+      height: 380px; 
+      overflow: hidden;
+    }
+
+    &-title {
+      max-width: 230px;
+
+      & br {
+        display: none;
+
+        @media (max-width: 500px) {
+          display: block;
+        }
+      }
+    }
+
+    &-information {
+      position: relative;
+      z-index: 1;
+    }
+
+  }
+  &__image {
+    @media (max-width: 722px) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    @media (max-width: 522px) {
+      right: -30px;
+    }
+
+    & img {
+      @media (max-width: 722px) {
+        opacity: 0.7;
+        z-index: -1;
+      }
+
+      @media (max-width: 522px) {
+        width: 389px;
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.footer {
+  padding-top: 100px;
+
+  @include breakpoint-900 {
+    padding-top: 80px;
+  }
+
+  &__body {
+    @include flex-between;
+    gap: 15px;
+    margin-bottom: 20px;
+    
+    @media (max-width: 822px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__description {
+    &--one {
+      max-width: 307px;
+    }
+
+    &--two {
+      max-width: 320px;
+    }
+
+    &--three {
+      max-width: 250px;
+    }
+
+    &--one, &--two, &--three {
+      @media (max-width: 822px) {
+        max-width: 100%;
+      }
+
+      & br {
+        @media (max-width: 822px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__row {
+    @include flex-all-between;
+    gap: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 22px 0;
+
+    @media (max-width: 522px) {
+      padding: 13px 0;
+    }
+  }
+
+  &__social {
+    @include flex-align-center;
+    gap: 36px;
+
+    @media (max-width: 522px) {
+      gap: 20px;
+    }
+
+    &-link {
+      transition: all var(--transition);
+
+      & svg {
+        @media (max-width: 522px) {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      
+      & path {
+        transition: all var(--transition);
+      }
+
+      &:hover path {
+        fill: var(--blue-color);
+      }
+    }
+  }
+}

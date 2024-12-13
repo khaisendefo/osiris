@@ -1,9 +1,120 @@
+.heading {
+  &-title {
+    &-general {
+      color: var(--white-color);
+      font-size: 108px;
+      font-weight: 600;
+      letter-spacing: -4%;
+
+      @include breakpoint-900 {
+        font-size: 90px;
+      }
+
+      @media (max-width: 722px) {
+        font-size: 70px;
+      }
+
+      @media (max-width: 622px) {
+        font-size: 50px;
+      }
+
+      @include breakpoint-400 {
+        font-size: 45px;
+      }
+    }
+    
+    &-section {
+      margin-bottom: 40px;
+      color: var(--white-color);
+      font-size: 3.25em;
+      font-weight: 600;
+      line-height: 63px;
+      letter-spacing: -2%;
+
+      @include breakpoint-1000 {
+        margin-bottom: 30px;
+        font-size: 3em;
+      }
+
+      @include breakpoint-800 {
+        font-size: 2.8em;
+      }
+
+      @include breakpoint-700 {
+        font-size: 2.5em;
+        margin-bottom: 22px;
+      }
+
+      @include breakpoint-600 {
+        font-size: 2.3em;
+        margin-bottom: 17px;
+      }
+
+      @include breakpoint-500 {
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 24px;
+      }
+
+      & span {
+        color: rgb(12, 169, 241);
+      }
+    }
+
+    &-small {
+      margin-bottom: 12px;
+      color: var(--white-color);
+      font-size: 2em;
+      font-weight: 600;
+      line-height: 39px;
+      letter-spacing: -2%;
+
+      @include breakpoint-1000 {
+        font-size: 1.9em;
+      }
+
+      @include breakpoint-800 {
+        font-size: 1.6em;
+      }
+
+      @include breakpoint-700 {
+        font-size: 1.5em;
+        line-height: 29px;
+      }
+    }
+  }
+}
 .text {
   &-link {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: -2%;
     font-weight: 600;
+  }
+
+  &-description {
+    color: var(--light-white-color);
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -2%;
+
+    @include breakpoint-600 {
+      font-size: 14px;
+    }
+
+    &-small {
+      color: var(--light-gray-color);
+      font-size: 1em;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0%;
+
+      @include breakpoint-600 {
+        font-size: 12px;
+        line-height: 15px;
+      } 
+    }
   }
 }
 

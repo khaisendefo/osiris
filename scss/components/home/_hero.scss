@@ -1,154 +1,185 @@
 .hero {
-  padding: 60px 0 100px;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-
-  @include breakpoint-1100 {
-    padding: 60px 0 70px;
-  }
+  padding: 160px 0 100px;
 
   @include breakpoint-900 {
-    padding: 45px 0;
+    padding: 130px 0 80px;
   }
 
-  @include breakpoint-600 {
-    padding: 20px 0 45px;
+  @media (max-width: 722px) {
+    // padding: 200px 0 80px;
+    height: 100vh;
   }
 
-  &__decor {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  &__title {
+    position: relative;
+    max-width: 866px;
+    text-align: center;
+    margin: 0 auto;
+    transform: translateY(25px);
+    
+    @include breakpoint-400 {
+      transform: translateY(35px);
+    }
 
     &-two {
+      margin-bottom: 52px;
+      letter-spacing: -4%;
+      font-size: 140px;
+      font-weight: 700;
+      line-height: 160px;
+      transform: translateY(0);
+
+      & span {
+        display: inline-block;
+        color: transparent;   
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+	      background-clip: text;
+	      background-image: linear-gradient(90.00deg, rgb(20, 112, 219),rgb(4, 229, 184));
+
+        @include breakpoint-900 {
+          font-size: 120px;
+          line-height: 130px;
+        }
+
+        @media (max-width: 722px) {
+          font-size: 100px;
+        }
+
+        @media (max-width: 622px) {
+          font-size: 70px;
+        }
+
+        @include breakpoint-400 {
+          font-size: 60px;
+        }
+      }
+
+      &::before {
+        content: '';
+        display: none !important;
+      }
+
+      @include breakpoint-900 {
+        font-size: 120px;
+      }
+
+      @media (max-width: 722px) {
+        font-size: 100px;
+        margin-bottom: 0px;
+      }
+
+      @media (max-width: 622px) {
+        font-size: 70px;
+        line-height: 70px;
+      }
+
+      @include breakpoint-400 {
+        font-size: 60px;
+      }
+    }
+
+    &::before {
+      content: '';
       position: absolute;
-      right: 0;
-      bottom: -200px;
-      z-index: -1;
-    }
-  }
+      top: 0;
+      right: 53px;
+      background: url('../images/star.png') no-repeat;
+      width: 13px;
+      height: 13px;
+      display: block;
 
-  &__container {
-    position: relative;
-  }
-
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    gap: 15px;
-    position: relative;
-    z-index: 1;
-
-    @include breakpoint-1000 {
-      flex-direction: column;
-      gap: 30px;
-    }
-  }
-
-  &__information {
-    &-title {
-      margin-bottom: 30px;
-
-      @include breakpoint-1100 {
-        margin-bottom: 20px;
+      @media (max-width: 822px) {
+        top: 0;
+        right: 0;
+        width: 7px;
+        height: 7px;
       }
     }
 
-    &-description {
-      margin-bottom: 40px;
-      max-width: 800px;
-
-      @include breakpoint-1100 {
-        margin-bottom: 25px;
+    & .flowtext {
+      background: linear-gradient(90deg, 
+          rgb(13, 92, 181), 
+          rgb(4, 229, 184), 
+          rgb(13, 92, 181));
+      background-size: 200% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textflow 3s ease-in-out infinite;
+  }
+  
+  @keyframes textflow {
+      0% {
+          background-position: 0% center;
       }
-
-      & a {
-        color: var(--accent-blue-color);
+      50% {
+          background-position: 100% center;
       }
+      100% {
+          background-position: 0% center;
+      }
+  }
+  }
+
+  &__yeld {
+    color: var(--light-white-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.5px;
+    letter-spacing: -2%;
+    text-align: center;
+    margin-bottom: 101px;
+
+    @media (max-width: 722px) {
+      margin-bottom: 196px;
     }
 
-    &-button {
+    @include breakpoint-400 {
+      transform: translateY(-5px);
+      margin-bottom: 100px;
+    }
+  }
+
+  &__scroll {
+    @include flex-column;
+    align-items: center;
+    max-width: 14px;
+    gap: 8px;
+    margin: 0 auto;
+
+    &-line {
+      width: 1px;
+      height: 44px;
+      background-color: var(--white-color);
+    }
+
+    &-circle {
       @include flex-all-center;
-      gap: 10px;
-      width: 290px;
-      padding: 20px 0;
-      font-weight: 600;
-      margin-bottom: 40px;
-      border-radius: 30px;
+      width: 14px;
+      height: 24px;
+      border-radius: 24px;
+      border: 1px solid var(--white-color);
+    }
 
-      @include breakpoint-1100 {
-        padding: 15px 0;
-        width: 260px;
-        margin-bottom: 25px;
+    &-eclips {
+      width: 2px;
+      height: 4px;
+      background-color: var(--white-color);
+      animation: scrollAnimation 1.5s infinite;
+      border-radius: 24px;
+    }
+
+    @keyframes scrollAnimation {
+      0% {
+        transform: translateY(0);
       }
-
-      &-icon {
-        & svg {
-          width: 18px;
-          height: 18px;
-
-          @include breakpoint-800 {
-            width: 15px;
-            height: 15px;
-          }
-        }
-
-        & svg path {
-          stroke: var(--white-color);
-        }
+      50% {
+        transform: translateY(2px);
       }
-    }
-
-    &-list {
-      display: inline-flex;
-      flex-wrap: wrap;
-      gap: 15px;
-
-      &-item {
-        padding: 10px 15px;
-        border: 1px solid var(--white-color);
-        border-radius: 20px;
+      100% {
+        transform: translateY(0);
       }
-    }
-  }
-
-  &__img {
-    min-width: 600px;
-    height: 600px;
-    padding: 10px;
-    background-color: var(--white-color);
-    border-radius: 15px;
-
-    @include breakpoint-1400 {
-      min-width: 500px;
-      height: 500px;
-    }
-
-    @include breakpoint-1300 {
-      min-width: 400px;
-      height: 400px;
-    }
-
-    @include breakpoint-1100 {
-      min-width: 300px;
-      height: 300px;
-    }
-
-    @include breakpoint-1000 {
-      min-width: 100%;
-      height: 400px;
-    }
-
-    &-wrapper {
-      border-radius: 15px;
-      width: 100%;
-      height: 100%;
-      background: url("../images/1.jpg") no-repeat;
-      background-size: cover;
-      background-position: center;
     }
   }
 }

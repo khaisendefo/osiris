@@ -3,11 +3,24 @@
     padding: 20px 0;
   }
 
+  &__logo {
+    & img {
+      @include breakpoint-600 {
+        width: 115px;
+      }
+    }
+  }
+
   &__content {
     @include flex-all-between;
   }
 
   &__link {
     display: inline-block;
+
+    @include breakpoint-600 {
+      padding: 10px 24px 10px 24px !important;
+      font-size: 15px;
+    }
   }
 }

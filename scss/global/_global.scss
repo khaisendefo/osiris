@@ -7,20 +7,67 @@ html, body {
 }
 
 .body {
-  background-color: var(--black-color);
   font-family: "Inter", sans-serif; 
+  font-size: 16px;
 }
 
 .wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
   position: relative;
+  background-color: var(--black-color);
+  max-height: 2975px;
 }
+
+
+.wrapper-inner {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper-inner {
+  position: relative; /* Это начальное состояние */
+  background-color: var(--black-color);
+}
+
+.pin-spacer {
+  background-color: transparent !important;
+  padding: 0 !important;
+  max-height: 2875px !important;
+}
+
+$breakpoints: (
+  1022px: 882px,
+  922px: 782px,
+  822px: 682px,
+  722px: 582px,
+  622px: 482px,
+  522px: 382px
+);
 
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 968px;
+  max-width: 982px;
   height: 100%;
+
+  @each $breakpoint, $max-width in $breakpoints {
+    @media (max-width: #{$breakpoint}) {
+      max-width: $max-width;
+    }
+  }
 }
+
+.main-section {
+  padding: 100px 0;
+
+  @include breakpoint-900 {
+    padding: 80px 0;
+  }
+}
+

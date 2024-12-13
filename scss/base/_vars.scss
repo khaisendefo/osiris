@@ -3,8 +3,9 @@
   // color vars
    --black-color: #000000;
    --white-color: #FFFFFF;
-   --gradient-blue-color: rgba(20, 112, 219, 1.00);
-   --gradient-blue-aqua-color: 90deg, #1470DB, #04E5B8;
+   --light-white-color: #FFFFFFBF;
+   --blue-color: rgba(20, 112, 219, 1.00);
+   --gradient-blue-color: linear-gradient(90.00deg, rgb(20, 112, 219),rgb(4, 222, 229) 127.317%);
    --light-gray-color: #9D8FA4;
 
    // transition vars
