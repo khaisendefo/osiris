@@ -12,17 +12,16 @@ html, body {
 }
 
 .wrapper {
-  position: relative;
   background-color: var(--black-color);
-  max-height: 2975px;
 }
 
+.pin-spacer {
+  max-height: 3450px;
+}
 
-.wrapper-inner {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
+.content {
+  overflow: hidden;
+  position: relative;
 }
 
 .main {
@@ -33,12 +32,6 @@ html, body {
 .wrapper-inner {
   position: relative; /* Это начальное состояние */
   background-color: var(--black-color);
-}
-
-.pin-spacer {
-  background-color: transparent !important;
-  padding: 0 !important;
-  max-height: 2875px !important;
 }
 
 $breakpoints: (

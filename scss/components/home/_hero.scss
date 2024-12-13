@@ -85,9 +85,11 @@
       top: 0;
       right: 53px;
       background: url('../images/star.png') no-repeat;
+      background-size: cover;
       width: 13px;
       height: 13px;
       display: block;
+      white-space: nowrap;
 
       @media (max-width: 822px) {
         top: 0;
