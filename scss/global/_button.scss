@@ -1,7 +1,7 @@
 .button {
   &-gradient { 
+    position: relative;
     display: inline-block;
-    border: 1px solid var(--blue-color);
     border-radius: 37px;
     padding: 11px 24px 13px 24px;
     color: var(--blue-color);
@@ -11,9 +11,24 @@
     font-weight: 600;
     line-height: 22px;
     letter-spacing: -2%;
+    background-color: var(--black-color);
 
-    &:hover {
-      opacity: 0.8;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      background: linear-gradient(90.00deg, rgb(20, 112, 219),rgb(4, 229, 184));
+      border-radius: 37px;
+      z-index: -1;
+    }
+
+    & span {
+      background: linear-gradient(90.00deg, rgb(20, 112, 219),rgb(4, 229, 184));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
     }
   }
 }

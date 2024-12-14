@@ -19,6 +19,11 @@
       padding: 20px 20px 0;
     }
 
+    @media (max-width: 622px) {
+      background: linear-gradient(135.00deg, rgb(20, 112, 219) 0%,rgb(4, 222, 229) 100%);
+      padding: 17px 20px 0;
+    }
+
     &-information {
       @media (max-width: 622px) {
         margin-bottom: 33px;
@@ -35,6 +40,10 @@
       @media (max-width: 622px) {
         margin: 0;
       }
+
+      @media (max-width: 522px) {
+        font-size: 15px;
+      }
     }
 
     &-link {
@@ -48,6 +57,7 @@
 
       &-two {
         display: none;
+        border: none;
         max-width: 144px;
         padding: 14px;
         text-align: center;

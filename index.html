@@ -17,7 +17,9 @@
                 <a class="header__logo" title="Logo Osiris" href="#">
                   <img src="assets/logo/logo.png" alt="">
                 </a>
-                <a class="header__link button-gradient text-link" title="Button get started" href="#">Get started</a>
+                <a class="header__link button-gradient text-link" title="Button get started" href="#">
+                  <span>Get started</span>
+                </a>
               </div>
             </div>
           </div>
@@ -26,7 +28,7 @@
           <div class="hero__container container">
             <h1 class="hero__title heading-title-general">Earn x1.23 rate</h1>
             <h1 class="hero__title hero__title-two heading-title-general">on <span class="flowtext">crypto</span></h1>
-            <p class="hero__yeld">*Average Yeld</p>
+            <p class="hero__yeld">Average Yeld</p>
             <div class="hero__scroll">
               <div class="hero__scroll-line"></div>
               <div class="hero__scroll-circle">
@@ -47,9 +49,13 @@
                     <h3 class="ready-set__card-title heading-title-small">Osiris <br> uses USDT TRC20</h3>
                     <p class="ready-set__card-description text-description">for all deposits and withdrawals</p>
                   </div>
-                  <div class="ready-set__image">
+                  <picture class="ready-set__image">
+                    <!-- Картинка для мобильных устройств -->
+                    <source srcset="assets/images/tether-money-mobile.png" media="(max-width: 522px)">
+                    <!-- Картинка по умолчанию -->
                     <img loading="lazy" src="assets/images/tether-money.png" alt="Tether USDT">
-                  </div>
+                  </picture>
+                  
                 </div>
               </div>
             </div>
@@ -114,7 +120,7 @@
                     <img loading="lazy" src="assets/images/app.png" alt="Tether USDT">
                   </div>
                 </div>
-                <a class="telegram-app__card-link telegram-app__card-link-two button-gradient" href="#">Get started</a>
+                <a class="telegram-app__card-link telegram-app__card-link-two button-gradient" href="#"><span>Get started</span></a>
               </div>
             </div>
           </section>
@@ -128,7 +134,7 @@
                 <p class="footer__description footer__description--three text-description-small">Osiriscrypto.com services are provided by Osiris Crypto Fund.</p>
               </div>
               <div class="footer__row">
-                <p class="footer__copyright text-description-small">© 2024 Osiriscrypto.com | All rights reserved</p>
+                <p class="footer__copyright text-description-small">© 2024 Osiriscrypto.com <span>|</span> All rights reserved</p>
                 <ul class="footer__social">
                   <li class="footer__social-item">
                     <a class="footer__social-link" href="#">
