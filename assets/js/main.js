@@ -31,19 +31,6 @@ const generatedAmount = document.getElementById('generatedAmount');
 const depositSlider = document.getElementById('depositSlider');
 const holdingSlider = document.getElementById('holdingSlider');
 
-function saveToLocalStorage() {
-    localStorage.setItem('deposit', depositSlider.value);
-    localStorage.setItem('holding', holdingSlider.value);
-}
-
-function loadFromLocalStorage() {
-    const savedDeposit = localStorage.getItem('deposit');
-    const savedHolding = localStorage.getItem('holding');
-
-    if (savedDeposit !== null) depositSlider.value = savedDeposit;
-    if (savedHolding !== null) holdingSlider.value = savedHolding;
-}
-
 function updateCalculator() {
     const deposit = parseFloat(depositSlider.value);
     const holding = parseInt(holdingSlider.value, 10);
@@ -57,20 +44,26 @@ function updateCalculator() {
     futureBalance.textContent = Math.round(futureBalanceValue);
     generatedAmount.textContent = Math.round(generatedAmountValue);
 
-    saveToLocalStorage();
-    updateSliderProgress(); 
+    updateSliderProgress(depositSlider); // Обновляем прогресс слайдера депозита
+    updateSliderProgress(holdingSlider); // Обновляем прогресс слайдера holding
 }
 
-function updateSliderProgress() {
-    const sliderWidth = depositSlider.offsetWidth; 
-    const value = depositSlider.value;
-    const percentage = (value / depositSlider.max) * 100; 
-    depositSlider.style.setProperty('--slider-progress', `${percentage}%`); 
+function updateSliderProgress(slider) {
+    const sliderWidth = slider.offsetWidth; // Получаем ширину слайдера
+    const value = slider.value;
+    const percentage = (value / slider.max) * 100; // Рассчитываем процентное значение слайдера
+    slider.style.setProperty('--slider-progress', `${percentage}%`); // Устанавливаем ширину для псевдо-элемента
 }
-
-loadFromLocalStorage();
 
 depositSlider.addEventListener('input', updateCalculator);
 holdingSlider.addEventListener('input', updateCalculator);
 
-updateCalculator(); 
+// Устанавливаем слайдеры на ноль при первом заходе
+depositSlider.value = 0;
+holdingSlider.value = 0;
+depositValue.textContent = 0;
+holdingValue.textContent = 0;
+futureBalance.textContent = 0;
+generatedAmount.textContent = 0;
+
+updateCalculator(); // Инициализация значений при загрузке страницы
