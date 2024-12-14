@@ -9,29 +9,19 @@ html, body {
 .body {
   font-family: "Inter", sans-serif; 
   font-size: 16px;
+  background-color: var(--black-color);
 }
 
 .wrapper {
   background-color: var(--black-color);
 }
 
-.pin-spacer {
-  max-height: 3450px;
-}
-
-.content {
-  overflow: hidden;
-  position: relative;
-}
-
-.main {
-  position: relative;
-  z-index: 1;
-}
-
 .wrapper-inner {
-  position: relative; /* Это начальное состояние */
   background-color: var(--black-color);
+}
+
+.scroll-text {
+  
 }
 
 $breakpoints: (

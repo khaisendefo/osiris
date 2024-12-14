@@ -7,169 +7,170 @@
   <title>Document</title>
 </head>
 <body class="body">
-  <div class="wrapper">
-      <!-- <div class="content"> -->
+  <div class="wrapper" id="app">
+    <div class="content">
+      <div class="section1 panel">
         <header class="header">
-            <div class="header__fixed">
-              <div class="header__container container">
-                <div class="header__content">
-                  <a class="header__logo" title="Logo Osiris" href="#">
-                    <img src="assets/logo/logo.png" alt="">
-                  </a>
-                  <a class="header__link button-gradient text-link" title="Button get started" href="#">Get started</a>
-                </div>
+          <div class="header__fixed">
+            <div class="header__container container">
+              <div class="header__content">
+                <a class="header__logo" title="Logo Osiris" href="#">
+                  <img src="assets/logo/logo.png" alt="">
+                </a>
+                <a class="header__link button-gradient text-link" title="Button get started" href="#">Get started</a>
               </div>
             </div>
+          </div>
         </header>
         <div class="hero">
-            <div class="hero__container container">
-              <h1 class="hero__title heading-title-general">Earn x1.23 rate</h1>
-              <h1 class="hero__title hero__title-two heading-title-general">on <span class="flowtext">crypto</span></h1>
-              <p class="hero__yeld">*Average Yeld</p>
-              <div class="hero__scroll">
-                <div class="hero__scroll-line"></div>
-                <div class="hero__scroll-circle">
-                  <div class="hero__scroll-eclips"></div>
+          <div class="hero__container container">
+            <h1 class="hero__title heading-title-general">Earn x1.23 rate</h1>
+            <h1 class="hero__title hero__title-two heading-title-general">on <span class="flowtext">crypto</span></h1>
+            <p class="hero__yeld">*Average Yeld</p>
+            <div class="hero__scroll">
+              <div class="hero__scroll-line"></div>
+              <div class="hero__scroll-circle">
+                <div class="hero__scroll-eclips"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-inner section2 panel">
+        <main class="main">
+          <section class="ready-set main-section">
+            <div class="ready-set__container container">
+              <div class="ready-set__content">
+                <h2 class="ready-set__title heading-title-section">Ready, <br> Set, Tether</h2>
+                <div class="ready-set__card">
+                  <div class="ready-set__card-information">
+                    <h3 class="ready-set__card-title heading-title-small">Osiris <br> uses USDT TRC20</h3>
+                    <p class="ready-set__card-description text-description">for all deposits and withdrawals</p>
+                  </div>
+                  <div class="ready-set__image">
+                    <img loading="lazy" src="assets/images/tether-money.png" alt="Tether USDT">
+                  </div>
                 </div>
               </div>
             </div>
-        </div>
-        <div class="wrapper-inner">
-          <main class="main">
-            <section class="ready-set main-section">
-              <div class="ready-set__container container">
-                <div class="ready-set__content">
-                  <h2 class="ready-set__title heading-title-section">Ready, <br> Set, Tether</h2>
-                  <div class="ready-set__card">
-                    <div class="ready-set__card-information">
-                      <h3 class="ready-set__card-title heading-title-small">Osiris <br> uses USDT TRC20</h3>
-                      <p class="ready-set__card-description text-description">for all deposits and withdrawals</p>
-                    </div>
-                    <div class="ready-set__image">
-                      <img loading="lazy" src="assets/images/tether-money.png" alt="Tether USDT">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="profit main-section">
-              <div class="profit__container container">
-                <h2 class="profit__title heading-title-section">See how much you can earn &#128293;</h2>
-                <div class="profit__card">
-                  <p class="profit__description-two text-link">Use this simple calculator to estimate your deposit growth over time</p>
-                  <div class="profit__calc">
-                    <div class="profit__calc-top profit__calc-deposit">
-                      <div class="profit__calc-row">
-                        <span class="profit__calc-label">Deposit amount</span>
-                        <div class="profit__calc-value profit__calc-value-usdt">
-                          <span id="depositValue">0</span>
-                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z" fill="#26A17B"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1151 12.0753V12.0739C12.0395 12.0794 11.6497 12.1028 10.78 12.1028C10.0856 12.1028 9.59681 12.0821 9.42494 12.0739V12.0759C6.75194 11.9584 4.75681 11.4929 4.75681 10.9361C4.75681 10.3799 6.75194 9.91444 9.42494 9.79481V11.6126C9.59956 11.6249 10.1001 11.6545 10.7917 11.6545C11.6215 11.6545 12.0374 11.6201 12.1151 11.6133V9.79619C14.7826 9.91513 16.7729 10.3806 16.7729 10.9361C16.7729 11.4929 14.7826 11.957 12.1151 12.0753ZM12.1151 9.60713V7.9805H15.8372V5.5H5.70281V7.9805H9.42494V9.60644C6.39994 9.74531 4.125 10.3448 4.125 11.0626C4.125 11.7803 6.39994 12.3791 9.42494 12.5187V17.7313H12.1151V12.5173C15.1353 12.3784 17.4047 11.7796 17.4047 11.0626C17.4047 10.3455 15.1353 9.74669 12.1151 9.60713Z" fill="white"/>
-                          </svg>                      
-                        </div>
-                      </div>
-                      <input type="range" class="profit__calc-slider" id="depositSlider" min="0" max="5000" step="1" value="0"/>
-                    </div>
-                    <div class="profit__calc-top profit__calc-holding">
-                      <div class="profit__calc-row">
-                        <div class="profit__calc-label">Holding period</div>
-                        <div class="profit__calc-value profit__calc-value-holding">
-                          <span id="holdingValue">0</span>
-                          <span class="profit__calc-value-day">days</span>
-                        </div>
-                      </div>
-                      <input type="range" class="profit__calc-slider" id="holdingSlider" min="0" max="60" step="1" value="0"/>
-                    </div>
-                  </div>
-                  <div class="profit__right">
-                    <p class="profit__description text-link">Use this simple calculator to estimate your deposit growth over time</p>
-                    <div class="profit__result">
-                      <div class="profit__result-item">
-                        <h3 class="profit__result-sum profit__result-future-balance" id="futureBalance">0</h3>
-                        <p class="profit__result-description text-link">Future balance</p>
-                      </div>
-                      <div class="profit__result-item">
-                        <h3 class="profit__result-sum profit__result-generated-amount" id="generatedAmount">0</h3>
-                        <p class="profit__result-description text-link">Generated amount</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="telegram-app main-section">
-              <div class="telegram-app__container container">
-                <div class="telegram-app__content">
-                  <h2 class="telegram-app__title heading-title-section">Osiris x <span>Telegram</span></h2>
-                  <div class="telegram-app__card">
-                    <div class="telegram-app__card-information">
-                      <h3 class="telegram-app__card-title heading-title-small">We’ve created <br> the app</h3>
-                      <p class="telegram-app__card-description text-description">to ensure an easy & safe process of <br> crypto earning</p>
-                      <a class="telegram-app__card-link button-gradient" href="#">Get started</a>
-                    </div>
-                    <div class="telegram-app__image">
-                      <img loading="lazy" src="assets/images/app.png" alt="Tether USDT">
-                    </div>
-                  </div>
-                  <a class="telegram-app__card-link telegram-app__card-link-two button-gradient" href="#">Get started</a>
-                </div>
-              </div>
-            </section>
-          </main>
-          <footer class="footer">
-            <div class="footer__container container">
-              <div class="footer__content">
-                <div class="footer__body">
-                  <p class="footer__description footer__description--one text-description-small">The purpose of this website is solely to display information regarding the products and services available on the Osiriscrypto.com. It is not intended to offer access to any of such products <br> and services. You may obtain access to such products and services in <br> Osiris-Telegram App.</p>
-                  <p class="footer__description footer__description--two text-description-small">Please note that the availability of the products and services in Osiris-Telegram App is subject to jurisdictional limitations. Osiriscrypto.com may not offer additional certain products, features and/or services on the Osiriscrypto.com in certain jurisdictions due to potential or actual regulatory restrictions.</p>
-                  <p class="footer__description footer__description--three text-description-small">Osiriscrypto.com services are provided by Osiris Crypto Fund.</p>
-                </div>
-                <div class="footer__row">
-                  <p class="footer__copyright text-description-small">© 2024 Osiriscrypto.com | All rights reserved</p>
-                  <ul class="footer__social">
-                    <li class="footer__social-item">
-                      <a class="footer__social-link" href="#">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15 3.625 19.125 8.375 19.875V12.875H5.875V10H8.375V7.75C8.375 5.25 9.875 3.875 12.125 3.875C13.25 3.875 14.375 4.125 14.375 4.125V6.625H13.125C11.875 6.625 11.5 7.375 11.5 8.125V10H14.25L13.75 12.875H11.375V20C16.375 19.25 20 15 20 10Z" fill="white"/>
-                        </svg>                    
-                      </a>
-                    </li>
-                    <li class="footer__social-item">
-                      <a class="footer__social-link" href="#">
-                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M19.5 2.125C19.25 1.25 18.625 0.625 17.75 0.375C16.25 2.23517e-07 9.87499 0 9.87499 0C9.87499 0 3.62501 2.23517e-07 2.00001 0.375C1.12501 0.625 0.499996 1.25 0.249996 2.125C-3.81842e-06 3.75 0 7 0 7C0 7 3.7998e-06 10.25 0.375004 11.875C0.625004 12.75 1.25 13.375 2.125 13.625C3.625 14 10 14 10 14C10 14 16.25 14 17.875 13.625C18.75 13.375 19.375 12.75 19.625 11.875C20 10.25 20 7 20 7C20 7 20 3.75 19.5 2.125ZM7.99999 10V4L13.25 7L7.99999 10Z" fill="white"/>
-                        </svg>                    
-                      </a>
-                    </li>
-                    <li class="footer__social-item">
-                      <a class="footer__social-link" href="#">
+          </section>
+          <section class="profit main-section">
+            <div class="profit__container container">
+              <h2 class="profit__title heading-title-section scroll-text">See how much you can earn &#128293;</h2>
+              <div class="profit__card">
+                <p class="profit__description-two text-link">Use this simple calculator to estimate your deposit growth over time</p>
+                <div class="profit__calc">
+                  <div class="profit__calc-top profit__calc-deposit">
+                    <div class="profit__calc-row">
+                      <span class="profit__calc-label">Deposit amount</span>
+                      <div class="profit__calc-value profit__calc-value-usdt">
+                        <span id="depositValue">0</span>
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M11 2.5C13.75 2.5 14.125 2.5 15.25 2.5C16.25 2.5 16.75 2.75 17.125 2.875C17.625 3.125 18 3.25 18.375 3.625C18.75 4 19 4.375 19.125 4.875C19.25 5.25 19.375 5.75 19.5 6.75C19.5 7.875 19.5 8.125 19.5 11C19.5 13.875 19.5 14.125 19.5 15.25C19.5 16.25 19.25 16.75 19.125 17.125C18.875 17.625 18.75 18 18.375 18.375C18 18.75 17.625 19 17.125 19.125C16.75 19.25 16.25 19.375 15.25 19.5C14.125 19.5 13.875 19.5 11 19.5C8.125 19.5 7.875 19.5 6.75 19.5C5.75 19.5 5.25 19.25 4.875 19.125C4.375 18.875 4 18.75 3.625 18.375C3.25 18 3 17.625 2.875 17.125C2.75 16.75 2.625 16.25 2.5 15.25C2.5 14.125 2.5 13.875 2.5 11C2.5 8.125 2.5 7.875 2.5 6.75C2.5 5.75 2.75 5.25 2.875 4.875C3.125 4.375 3.25 4 3.625 3.625C4 3.25 4.375 3 4.875 2.875C5.25 2.75 5.75 2.625 6.75 2.5C7.875 2.5 8.25 2.5 11 2.5ZM11 0.625C8.125 0.625 7.875 0.625 6.75 0.625C5.625 0.625 4.875 0.875001 4.25 1.125C3.625 1.375 3 1.75 2.375 2.375C1.75 3 1.5 3.5 1.125 4.25C0.875001 4.875 0.75 5.625 0.625 6.75C0.625 7.875 0.625 8.25 0.625 11C0.625 13.875 0.625 14.125 0.625 15.25C0.625 16.375 0.875001 17.125 1.125 17.75C1.375 18.375 1.75 19 2.375 19.625C3 20.25 3.5 20.5 4.25 20.875C4.875 21.125 5.625 21.25 6.75 21.375C7.875 21.375 8.25 21.375 11 21.375C13.75 21.375 14.125 21.375 15.25 21.375C16.375 21.375 17.125 21.125 17.75 20.875C18.375 20.625 19 20.25 19.625 19.625C20.25 19 20.5 18.5 20.875 17.75C21.125 17.125 21.25 16.375 21.375 15.25C21.375 14.125 21.375 13.75 21.375 11C21.375 8.25 21.375 7.875 21.375 6.75C21.375 5.625 21.125 4.875 20.875 4.25C20.625 3.625 20.25 3 19.625 2.375C19 1.75 18.5 1.5 17.75 1.125C17.125 0.875001 16.375 0.75 15.25 0.625C14.125 0.625 13.875 0.625 11 0.625Z" fill="white"/>
-                          <path d="M11 5.625C8 5.625 5.625 8 5.625 11C5.625 14 8 16.375 11 16.375C14 16.375 16.375 14 16.375 11C16.375 8 14 5.625 11 5.625ZM11 14.5C9.125 14.5 7.5 13 7.5 11C7.5 9.125 9 7.5 11 7.5C12.875 7.5 14.5 9 14.5 11C14.5 12.875 12.875 14.5 11 14.5Z" fill="white"/>
-                          <path d="M16.5 6.75C17.1904 6.75 17.75 6.19036 17.75 5.5C17.75 4.80964 17.1904 4.25 16.5 4.25C15.8096 4.25 15.25 4.80964 15.25 5.5C15.25 6.19036 15.8096 6.75 16.5 6.75Z" fill="white"/>
-                        </svg>                    
-                      </a>
-                    </li>
-                    <li class="footer__social-item">
-                      <a class="footer__social-link" href="#">
-                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M2.1249 7.63537C7.49359 5.29631 11.0736 3.75426 12.8648 3.00922C17.9792 0.881975 19.0419 0.51245 19.7346 0.500118C19.8869 0.497565 20.2276 0.53532 20.4482 0.714361C20.6345 0.86554 20.6858 1.06976 20.7103 1.2131C20.7348 1.35643 20.7654 1.68295 20.7411 1.93808C20.464 4.85012 19.2647 11.9169 18.6546 15.1784C18.3965 16.5585 17.8882 17.0212 17.3961 17.0665C16.3266 17.1649 15.5145 16.3597 14.4787 15.6807C12.8578 14.6182 11.9421 13.9568 10.3688 12.92C8.55053 11.7218 9.72923 11.0632 10.7654 9.98699C11.0366 9.70533 15.7487 5.41932 15.8399 5.03052C15.8513 4.98189 15.8619 4.80063 15.7542 4.70492C15.6465 4.60921 15.4876 4.64194 15.3729 4.66797C15.2104 4.70487 12.621 6.41633 7.60486 9.80237C6.86988 10.3071 6.20416 10.553 5.6077 10.5401C4.95015 10.5259 3.68528 10.1683 2.74498 9.86264C1.59166 9.48774 0.675027 9.28953 0.754845 8.65284C0.796419 8.32121 1.2531 7.98205 2.1249 7.63537Z" fill="white"/>
-                        </svg>                    
-                      </a>
-                    </li>
-                  </ul>
+                          <path d="M11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z" fill="#26A17B"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1151 12.0753V12.0739C12.0395 12.0794 11.6497 12.1028 10.78 12.1028C10.0856 12.1028 9.59681 12.0821 9.42494 12.0739V12.0759C6.75194 11.9584 4.75681 11.4929 4.75681 10.9361C4.75681 10.3799 6.75194 9.91444 9.42494 9.79481V11.6126C9.59956 11.6249 10.1001 11.6545 10.7917 11.6545C11.6215 11.6545 12.0374 11.6201 12.1151 11.6133V9.79619C14.7826 9.91513 16.7729 10.3806 16.7729 10.9361C16.7729 11.4929 14.7826 11.957 12.1151 12.0753ZM12.1151 9.60713V7.9805H15.8372V5.5H5.70281V7.9805H9.42494V9.60644C6.39994 9.74531 4.125 10.3448 4.125 11.0626C4.125 11.7803 6.39994 12.3791 9.42494 12.5187V17.7313H12.1151V12.5173C15.1353 12.3784 17.4047 11.7796 17.4047 11.0626C17.4047 10.3455 15.1353 9.74669 12.1151 9.60713Z" fill="white"/>
+                        </svg>                      
+                      </div>
+                    </div>
+                    <input type="range" class="profit__calc-slider" id="depositSlider" min="0" max="5000" step="1" value="0"/>
+                  </div>
+                  <div class="profit__calc-top profit__calc-holding">
+                    <div class="profit__calc-row">
+                      <div class="profit__calc-label">Holding period</div>
+                      <div class="profit__calc-value profit__calc-value-holding">
+                        <span id="holdingValue">0</span>
+                        <span class="profit__calc-value-day">days</span>
+                      </div>
+                    </div>
+                    <input type="range" class="profit__calc-slider" id="holdingSlider" min="0" max="60" step="1" value="0"/>
+                  </div>
+                </div>
+                <div class="profit__right">
+                  <p class="profit__description text-link">Use this simple calculator to estimate your deposit growth over time</p>
+                  <div class="profit__result">
+                    <div class="profit__result-item">
+                      <h3 class="profit__result-sum profit__result-future-balance" id="futureBalance">0</h3>
+                      <p class="profit__result-description text-link">Future balance</p>
+                    </div>
+                    <div class="profit__result-item">
+                      <h3 class="profit__result-sum profit__result-generated-amount" id="generatedAmount">0</h3>
+                      <p class="profit__result-description text-link">Generated amount</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </footer>
-        </div>
-      <!-- </div> -->
+          </section>
+          <section class="telegram-app main-section">
+            <div class="telegram-app__container container">
+              <div class="telegram-app__content">
+                <h2 class="telegram-app__title heading-title-section">Osiris x <span>Telegram</span></h2>
+                <div class="telegram-app__card">
+                  <div class="telegram-app__card-information">
+                    <h3 class="telegram-app__card-title heading-title-small">We’ve created <br> the app</h3>
+                    <p class="telegram-app__card-description text-description">to ensure an easy & safe process of <br> crypto earning</p>
+                    <a class="telegram-app__card-link button-gradient" href="#">Get started</a>
+                  </div>
+                  <div class="telegram-app__image">
+                    <img loading="lazy" src="assets/images/app.png" alt="Tether USDT">
+                  </div>
+                </div>
+                <a class="telegram-app__card-link telegram-app__card-link-two button-gradient" href="#">Get started</a>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="footer__container container">
+            <div class="footer__content">
+              <div class="footer__body">
+                <p class="footer__description footer__description--one text-description-small">The purpose of this website is solely to display information regarding the products and services available on the Osiriscrypto.com. It is not intended to offer access to any of such products <br> and services. You may obtain access to such products and services in <br> Osiris-Telegram App.</p>
+                <p class="footer__description footer__description--two text-description-small">Please note that the availability of the products and services in Osiris-Telegram App is subject to jurisdictional limitations. Osiriscrypto.com may not offer additional certain products, features and/or services on the Osiriscrypto.com in certain jurisdictions due to potential or actual regulatory restrictions.</p>
+                <p class="footer__description footer__description--three text-description-small">Osiriscrypto.com services are provided by Osiris Crypto Fund.</p>
+              </div>
+              <div class="footer__row">
+                <p class="footer__copyright text-description-small">© 2024 Osiriscrypto.com | All rights reserved</p>
+                <ul class="footer__social">
+                  <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15 3.625 19.125 8.375 19.875V12.875H5.875V10H8.375V7.75C8.375 5.25 9.875 3.875 12.125 3.875C13.25 3.875 14.375 4.125 14.375 4.125V6.625H13.125C11.875 6.625 11.5 7.375 11.5 8.125V10H14.25L13.75 12.875H11.375V20C16.375 19.25 20 15 20 10Z" fill="white"/>
+                      </svg>                    
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                      <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 2.125C19.25 1.25 18.625 0.625 17.75 0.375C16.25 2.23517e-07 9.87499 0 9.87499 0C9.87499 0 3.62501 2.23517e-07 2.00001 0.375C1.12501 0.625 0.499996 1.25 0.249996 2.125C-3.81842e-06 3.75 0 7 0 7C0 7 3.7998e-06 10.25 0.375004 11.875C0.625004 12.75 1.25 13.375 2.125 13.625C3.625 14 10 14 10 14C10 14 16.25 14 17.875 13.625C18.75 13.375 19.375 12.75 19.625 11.875C20 10.25 20 7 20 7C20 7 20 3.75 19.5 2.125ZM7.99999 10V4L13.25 7L7.99999 10Z" fill="white"/>
+                      </svg>                    
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 2.5C13.75 2.5 14.125 2.5 15.25 2.5C16.25 2.5 16.75 2.75 17.125 2.875C17.625 3.125 18 3.25 18.375 3.625C18.75 4 19 4.375 19.125 4.875C19.25 5.25 19.375 5.75 19.5 6.75C19.5 7.875 19.5 8.125 19.5 11C19.5 13.875 19.5 14.125 19.5 15.25C19.5 16.25 19.25 16.75 19.125 17.125C18.875 17.625 18.75 18 18.375 18.375C18 18.75 17.625 19 17.125 19.125C16.75 19.25 16.25 19.375 15.25 19.5C14.125 19.5 13.875 19.5 11 19.5C8.125 19.5 7.875 19.5 6.75 19.5C5.75 19.5 5.25 19.25 4.875 19.125C4.375 18.875 4 18.75 3.625 18.375C3.25 18 3 17.625 2.875 17.125C2.75 16.75 2.625 16.25 2.5 15.25C2.5 14.125 2.5 13.875 2.5 11C2.5 8.125 2.5 7.875 2.5 6.75C2.5 5.75 2.75 5.25 2.875 4.875C3.125 4.375 3.25 4 3.625 3.625C4 3.25 4.375 3 4.875 2.875C5.25 2.75 5.75 2.625 6.75 2.5C7.875 2.5 8.25 2.5 11 2.5ZM11 0.625C8.125 0.625 7.875 0.625 6.75 0.625C5.625 0.625 4.875 0.875001 4.25 1.125C3.625 1.375 3 1.75 2.375 2.375C1.75 3 1.5 3.5 1.125 4.25C0.875001 4.875 0.75 5.625 0.625 6.75C0.625 7.875 0.625 8.25 0.625 11C0.625 13.875 0.625 14.125 0.625 15.25C0.625 16.375 0.875001 17.125 1.125 17.75C1.375 18.375 1.75 19 2.375 19.625C3 20.25 3.5 20.5 4.25 20.875C4.875 21.125 5.625 21.25 6.75 21.375C7.875 21.375 8.25 21.375 11 21.375C13.75 21.375 14.125 21.375 15.25 21.375C16.375 21.375 17.125 21.125 17.75 20.875C18.375 20.625 19 20.25 19.625 19.625C20.25 19 20.5 18.5 20.875 17.75C21.125 17.125 21.25 16.375 21.375 15.25C21.375 14.125 21.375 13.75 21.375 11C21.375 8.25 21.375 7.875 21.375 6.75C21.375 5.625 21.125 4.875 20.875 4.25C20.625 3.625 20.25 3 19.625 2.375C19 1.75 18.5 1.5 17.75 1.125C17.125 0.875001 16.375 0.75 15.25 0.625C14.125 0.625 13.875 0.625 11 0.625Z" fill="white"/>
+                        <path d="M11 5.625C8 5.625 5.625 8 5.625 11C5.625 14 8 16.375 11 16.375C14 16.375 16.375 14 16.375 11C16.375 8 14 5.625 11 5.625ZM11 14.5C9.125 14.5 7.5 13 7.5 11C7.5 9.125 9 7.5 11 7.5C12.875 7.5 14.5 9 14.5 11C14.5 12.875 12.875 14.5 11 14.5Z" fill="white"/>
+                        <path d="M16.5 6.75C17.1904 6.75 17.75 6.19036 17.75 5.5C17.75 4.80964 17.1904 4.25 16.5 4.25C15.8096 4.25 15.25 4.80964 15.25 5.5C15.25 6.19036 15.8096 6.75 16.5 6.75Z" fill="white"/>
+                      </svg>                    
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                      <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.1249 7.63537C7.49359 5.29631 11.0736 3.75426 12.8648 3.00922C17.9792 0.881975 19.0419 0.51245 19.7346 0.500118C19.8869 0.497565 20.2276 0.53532 20.4482 0.714361C20.6345 0.86554 20.6858 1.06976 20.7103 1.2131C20.7348 1.35643 20.7654 1.68295 20.7411 1.93808C20.464 4.85012 19.2647 11.9169 18.6546 15.1784C18.3965 16.5585 17.8882 17.0212 17.3961 17.0665C16.3266 17.1649 15.5145 16.3597 14.4787 15.6807C12.8578 14.6182 11.9421 13.9568 10.3688 12.92C8.55053 11.7218 9.72923 11.0632 10.7654 9.98699C11.0366 9.70533 15.7487 5.41932 15.8399 5.03052C15.8513 4.98189 15.8619 4.80063 15.7542 4.70492C15.6465 4.60921 15.4876 4.64194 15.3729 4.66797C15.2104 4.70487 12.621 6.41633 7.60486 9.80237C6.86988 10.3071 6.20416 10.553 5.6077 10.5401C4.95015 10.5259 3.68528 10.1683 2.74498 9.86264C1.59166 9.48774 0.675027 9.28953 0.754845 8.65284C0.796419 8.32121 1.2531 7.98205 2.1249 7.63537Z" fill="white"/>
+                      </svg>                    
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
   </div>
-  <script src="assets/libs/smoothscroll.min.js"></script>
   <script src="assets/libs/gsap.js"></script>
   <script src="assets/libs/ScrollTrigger.js"></script>
-  <!-- <script src="assets/libs/ScrollSmoother.js"></script> -->
+  <script src="assets/libs/ScrollSmoother.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
