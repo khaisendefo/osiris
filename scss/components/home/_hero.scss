@@ -96,35 +96,57 @@
 
       @media (max-width: 822px) {
         top: 3px;
-        right: 3px;
+        right: 7px;
         width: 7px;
         height: 7px;
       }
     }
 
-    & .flowtext {
-      background: linear-gradient(90deg, 
-          rgb(13, 92, 181), 
-          rgb(4, 229, 184), 
-          rgb(13, 92, 181));
-      background-size: 200% auto;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: textflow 3s ease-in-out infinite;
+  //   & .flowtext {
+  //     background: linear-gradient(90deg, 
+  //         rgb(13, 92, 181), 
+  //         rgb(4, 229, 184), 
+  //         rgb(13, 92, 181));
+  //     background-size: 200% auto;
+  //     background-clip: text;
+  //     -webkit-background-clip: text;
+  //     -webkit-text-fill-color: transparent;
+  //     animation: textflow 3s ease-in-out infinite;
+  // }
+  
+  // @keyframes textflow {
+  //     0% {
+  //         background-position: 0% center;
+  //     }
+  //     50% {
+  //         background-position: 100% center;
+  //     }
+  //     100% {
+  //         background-position: 0% center;
+  //     }
+  // }
+
+  .flowtext {
+    background: linear-gradient(90deg, 
+        rgb(13, 92, 181), 
+        rgb(4, 229, 184), 
+        rgb(13, 92, 181));
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textflow 3s linear infinite;
   }
   
   @keyframes textflow {
-      0% {
-          background-position: 0% center;
-      }
-      50% {
-          background-position: 100% center;
-      }
-      100% {
-          background-position: 0% center;
-      }
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 200% 0%;
+    }
   }
+  
   }
 
   &__yeld {

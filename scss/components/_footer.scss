@@ -34,6 +34,10 @@
         max-width: 100%;
       }
 
+      @include breakpoint-600 {
+        font-size: 13px;
+      }
+
       & br {
         @media (max-width: 822px) {
           display: none;

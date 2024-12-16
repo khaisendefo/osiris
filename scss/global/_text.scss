@@ -57,7 +57,13 @@
       }
 
       & span {
-        color: rgb(12, 169, 241);
+        background: linear-gradient(90deg, 
+        rgb(12, 169, 241), 
+        rgb(22, 186, 248));
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
 

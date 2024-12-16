@@ -21,9 +21,6 @@ panels.forEach((panel, i) => {
 });
 
 
-
-
-
 const depositValue = document.getElementById('depositValue');
 const holdingValue = document.getElementById('holdingValue');
 const futureBalance = document.getElementById('futureBalance');
@@ -67,3 +64,14 @@ futureBalance.textContent = 0;
 generatedAmount.textContent = 0;
 
 updateCalculator(); // Инициализация значений при загрузке страницы
+
+
+
+
+
+
+
+
+
+
+
