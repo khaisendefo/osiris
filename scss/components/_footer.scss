@@ -30,6 +30,8 @@
     }
 
     &--one, &--two, &--three {
+      font-weight: 500;
+
       @media (max-width: 822px) {
         max-width: 100%;
       }
