@@ -39,7 +39,7 @@
         -webkit-text-fill-color: transparent; 
 	      background-clip: text;
 	      background-image: linear-gradient(90.00deg, rgb(20, 112, 219),rgb(4, 229, 184));
-        margin-left: -14px;
+        transform: translateX(-14px);
 
         @include breakpoint-900 {
           font-size: 120px;
@@ -52,6 +52,7 @@
 
         @media (max-width: 622px) {
           font-size: 70px;
+          transform: translateX(-8px);
         }
 
         @include breakpoint-400 {
