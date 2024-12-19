@@ -26,7 +26,7 @@
 
     &-two {
       margin-bottom: 52px;
-      letter-spacing: -4%;
+      letter-spacing: -10%;
       font-size: 140px;
       font-weight: 700;
       line-height: 160px;
@@ -39,6 +39,7 @@
         -webkit-text-fill-color: transparent; 
 	      background-clip: text;
 	      background-image: linear-gradient(90.00deg, rgb(20, 112, 219),rgb(4, 229, 184));
+        margin-left: -14px;
 
         @include breakpoint-900 {
           font-size: 120px;
@@ -85,8 +86,8 @@
     &::before {
       content: '';
       position: absolute;
-      top: 0;
-      right: 53px;
+      top: 5px;
+      right: 49px;
       background: url('../images/star.png') no-repeat;
       background-size: cover;
       width: 13px;
@@ -97,8 +98,35 @@
       @media (max-width: 822px) {
         top: 3px;
         right: 7px;
+        width: 10px;
+        height: 10px;
+      }
+
+      @media (max-width: 722px) {
+        right: 25px;
+        top: 9px;
+      }
+
+      @media (max-width: 622px) {
+        width: 9px;
+        height: 9px;
+        top: 5px;
+        right: 45px;
+      }
+
+      @media (max-width: 522px) {
+        right: -8px;
+        top: 0;
+      }
+
+      @media (max-width: 450px) {
         width: 7px;
         height: 7px;
+      }
+
+      @include breakpoint-400 {
+        right: 12px;
+        top: 5px;
       }
     }
 
@@ -135,17 +163,18 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textflow 3s linear infinite;
-  }
+    animation: textflow 1.5s linear infinite;
+}
   
-  @keyframes textflow {
+@keyframes textflow {
     0% {
-      background-position: 0% 0%;
+        background-position: 200% 0%;
     }
     100% {
-      background-position: 200% 0%;
+        background-position: 0% 0%;
     }
-  }
+}
+
   
   }
 

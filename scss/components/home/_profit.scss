@@ -1,9 +1,6 @@
 .profit {
   &__title {
-    @include flex-align-center;
     position: relative;
-    flex-direction: row-reverse;
-    justify-content: start;
     gap: 5px;
 
     & br {
@@ -11,6 +8,18 @@
 
       @include breakpoint-500 {
         display: block;
+      }
+    }
+
+    & b {
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+      @include breakpoint-500 {
+        opacity: 1;
+        width: auto;
+        height: auto;
       }
     }
   }
@@ -30,6 +39,12 @@
 
     @media (max-width: 622px) {
       padding: 20px;
+    }
+  }
+
+  &__description-two {
+    @media (max-width: 722px) {
+      margin-bottom: 40px;
     }
   }
 
@@ -139,7 +154,8 @@
         left: 0;
         height: 100%;
         background: rgb(20, 22, 22); 
-        border-radius: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
         z-index: 1;
         width: var(--slider-progress, 0%);
       }
@@ -159,10 +175,10 @@
       &::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        width: 22px;
-        height: 22px;
+        width: 24px;
+        height: 24px;
         border: 1px solid rgb(255, 255, 255);
-        background: rgba(255, 255, 255, 0.93);
+        background: rgb(255, 255, 255);
         border-radius: 50%;
         position: relative;
         z-index: 2; /* Ползунок должен быть над заполнением */
