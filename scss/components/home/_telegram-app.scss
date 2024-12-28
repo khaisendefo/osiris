@@ -32,6 +32,18 @@
 
     &-title {
       max-width: 230px;
+
+      @media (max-width: 622px) {
+        display: none;
+      }
+
+      &-two {
+        display: none;
+
+        @media (max-width: 622px) {
+          display: block;
+        }
+      }
     }
 
     &-description {
