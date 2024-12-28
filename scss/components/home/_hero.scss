@@ -37,7 +37,8 @@
       transform: translateY(0);
 
       & span {
-        display: inline-block;
+        display: block;
+        white-space: nowrap;
         color: transparent;   
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
