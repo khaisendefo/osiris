@@ -22,11 +22,12 @@
     @media (max-width: 622px) {
       background: linear-gradient(135.00deg, rgb(20, 112, 219) 0%,rgb(4, 222, 229) 100%);
       padding: 17px 20px 0;
+      height: 540px;
     }
 
     &-information {
       @media (max-width: 622px) {
-        margin-bottom: 33px;
+        margin-bottom: 0px;
       }
     }
 
@@ -50,11 +51,20 @@
       margin-bottom: 22px;
 
       @media (max-width: 622px) {
-        margin: 0;
+        display: none;
       }
 
-      @media (max-width: 522px) {
-        font-size: 15px;
+      &-two {
+        display: none;
+
+        @media (max-width: 622px) {
+          display: block;
+          margin: 0;
+        }
+
+        @media (max-width: 522px) {
+          font-size: 15px;
+        }
       }
     }
 
@@ -85,6 +95,14 @@
     @media (max-width: 622px) {
       display: flex;
       justify-content: center;
+      overflow: hidden;
+    }
+
+    & img {
+      @media (max-width: 622px) {
+        width: 240px;
+        transform: translateY(25px);
+      }
     }
   }
 }
