@@ -30,7 +30,7 @@
     }
 
     &--one, &--two, &--three {
-      font-weight: 400;
+      font-weight: 500;
 
       @media (max-width: 822px) {
         max-width: 100%;
@@ -62,6 +62,7 @@
   &__copyright {
     @include breakpoint-600 {
       font-size: 13px;
+      font-weight: 500;
       max-width: 160px;
     }
 
